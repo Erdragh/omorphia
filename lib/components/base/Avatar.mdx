@@ -1,0 +1,28 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story } from '@storybook/blocks';
+import * as AvatarStories from "./Avatar.stories"
+
+<Meta of={AvatarStories} />
+
+# Avatar
+
+This is a component that shows an image as an Avatar. It is used for both user profiles and project profiles.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+An Avatar display can be large.
+
+<Story of={AvatarStories.Large} />
+
+An Avatar can be made circular.
+
+<Story of={AvatarStories.Circular} />
+
+An Avatar does not have to have a `src` attribute specified.
+
+<Story of={AvatarStories.NoSource} />

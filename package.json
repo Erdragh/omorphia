@@ -22,7 +22,9 @@
     "fix": "eslint --fix --ext .js,.vue,.ts,.jsx,.tsx,.html,.vue . && prettier --write .",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "chart.js": "^4.3.3",
@@ -38,16 +40,26 @@
     "xss": "^1.0.14"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.4.1",
+    "@storybook/addon-interactions": "^7.4.1",
+    "@storybook/addon-links": "^7.4.1",
+    "@storybook/blocks": "^7.4.1",
+    "@storybook/vue3": "^7.4.1",
+    "@storybook/vue3-vite": "^7.4.1",
     "@vitejs/plugin-vue": "^4.2.3",
     "eslint": "^8.41.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-vue": "^9.14.1",
     "postcss": "^8.4.24",
     "postcss-prefix-selector": "^1.16.0",
     "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.1",
+    "storybook": "^7.4.1",
     "vite": "^4.3.9",
     "vite-plugin-eslint": "^1.8.1",
     "vite-svg-loader": "^4.0.0",
